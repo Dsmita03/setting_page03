@@ -1,0 +1,69 @@
+ /* App container */
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Header styles */
+h1 {
+  font-size: 24px;
+}
+
+button.btn-btn-secondary {
+  background-color: grey;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+/* Search input styles */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Option list container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles within the option list */
+h3 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* List of options styles */
+ul.list-group {
+  list-style: none;
+  padding: 0;
+}
+
+li.list-group-item {
+  background-color: black;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Name and description styles within an option */
+h6 {
+  font-size: 18px;
+  margin: 0;
+}
+
+p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
