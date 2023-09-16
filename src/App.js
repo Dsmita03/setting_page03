@@ -15,8 +15,34 @@ import HideAsCalculator from './components/HideAscalculator';
 
 function App() {
   const options = [
-    // ... (your options data remains unchanged)
-  ]; 
+    {
+      header: {
+        name: "General Settings",
+      },
+      values: [
+        {
+          name: "Theme",
+          description: "Change the theme of the application.",
+        },
+        // Add more settings here
+      ],
+    },
+    {
+      header: {
+        name: "Privacy Settings",
+      },values: [
+        {
+          name: "Allow Access",
+          description: "Manage application access permissions.",
+        },
+        {
+          name: "Hide as Calculator",
+          description: "Hide the application as a calculator.",
+        },
+        // Add more privacy settings here
+      ], },
+      // Add more headers and settings here
+    ]; // ... (your options data remains unchanged)
 
   const [visibleOptions, setVisibleOptions] = useState(options);
 
