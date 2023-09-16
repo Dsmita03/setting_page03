@@ -1,14 +1,14 @@
 import React, { useState } from 'react'; // Import React and useState
 
-import 'C:/Users/Debasmita/rough/src/App.css'; // Import your CSS file
-import 'C:/Users/Debasmita/rough/src/components/Theme.js';// Import your Theme file
-import  'C:/Users/Debasmita/rough/src/components/AllowAccess.js';//import your Alow Acess file
-import  ' C:/Users/Debasmita/rough/src/components/HideAscalculator.js';// Import your hide as calculator file
-import ' C:/Users/Debasmita/rough/src/components/CheckUpdate.js'; // Import your Checkupdate file
-import  'C:/Users/Debasmita/rough/src/components/About.js'; //Import Your About file
-import Theme from 'C:/Users/Debasmita/rough/src/components/Theme.js';
-import AllowAccess from 'C:/Users/Debasmita/rough/src/components/AllowAccess.js';
-import About from 'C:/Users/Debasmita/rough/src/components/About.js';
+import './App.css'; // Import your CSS file
+import './components/Theme.js';// Import your Theme file
+import  './components/AllowAccess.js';//import your Alow Acess file
+import  './components/HideAscalculator.js';// Import your hide as calculator file
+import './components/CheckUpdate.js'; // Import your Checkupdate file
+import  './components/About.js'; //Import Your About file
+import Theme from './components/Theme.js';
+import AllowAccess from './components/AllowAccess.js';
+import About from './components/About.js';
 import CheckUpdate from './components/CheckUpdate';
 import HideAsCalculator from './components/HideAscalculator';
  
