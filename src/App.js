@@ -11,7 +11,6 @@ import AllowAccess from './components/AllowAccess.js';
 import About from './components/About.js';
 import CheckUpdate from './components/CheckUpdate';
 import HideAsCalculator from './components/HideAscalculator';
- 
 
 function App() {
   const options = [
@@ -74,7 +73,7 @@ function App() {
 
     setVisibleOptions(returnedItems);
   };
-
+  
   return (
     <div className="App">
       <div className="container my-5">

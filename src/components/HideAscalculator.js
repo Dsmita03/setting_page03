@@ -1,32 +1,35 @@
-import React, { useState } from 'react';
+ // Calculator.js
+import React, { Component } from 'react';
+import HiddenApp from './HiddenApp';
 
-function HideAsCalculator() {
-  // State to manage calculator visibility
-  const [isCalculatorVisible, setIsCalculatorVisible] = useState(true);
+class HideAscalculator extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      calculatorVisible: true,
+    };
+  }
 
-  // Function to toggle the visibility of the calculator
-  const toggleCalculatorVisibility = () => {
-    setIsCalculatorVisible((prev) => !prev);
+  toggleHiddenApp = () => {
+    this.setState((prevState) => ({
+      calculatorVisible: !prevState.calculatorVisible,
+    }));
   };
 
-  return (
-    <div>
-      <h3>Hide as Calculator Settings</h3>
-      <p>Calculator is {isCalculatorVisible ? 'visible' : 'hidden'}</p>
-      <button onClick={toggleCalculatorVisibility}>
-        {isCalculatorVisible ? 'Hide Calculator' : 'Show Calculator'}
-      </button>
-      {/* Add additional hide-as-calculator related settings here */}
-      {isCalculatorVisible && (
-        <div>
-          {/* Calculator UI goes here */}
-          <input type="text" placeholder="Enter expression" />
-          <button>Calculate</button>
-          <div>Result: {/* Display the calculated result here */}</div>
-        </div>
-      )}
-    </div>
-  );
+  render() {
+    return (
+      <div>
+        {this.state.calculatorVisible ? (
+          <div>
+            {/* Calculator UI */}
+            <button onClick={this.toggleHiddenApp}>Toggle App</button>
+          </div>
+        ) : (
+          <HiddenApp onClose={this.toggleHiddenApp} />
+        )}
+      </div>
+    );
+  }
 }
 
-export default HideAsCalculator;
+export default HideAscalculator;
